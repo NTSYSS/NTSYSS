@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "NTSYSS",
+    "motivations": "Originally, I was interested in the decentralized concept of blockchain technology after being impressed by Bitcoin's Genesis Block, and I had been mining Bitcoin for a long time, but I started looking for other coins after being pushed by mining companies with abundant financial resources. In 2017, I came across Cardano and was impressed by its philosophy and decentralized concept, so I started doing pre-sales.\nInitially, there were many users who did not know how to set up and synchronize Daedalus Wallet, so I continued to provide support for them.",
+    "objectives": "To act as one of the activities for the development of cardano and the realization of a decentralized and fair society.",
+    "paymentAddress": "addr1qx7mj4ch6fgs2zkzaw5veraxh73patl9yq9lvdsnwjc2hfx3u5zvm4ufza8fjpwewedymkf4j90tenyrqgwes88r8fxqmtzuvy",
+    "qualifications": "Since 2021, we have been running NTSY Support Service (NTSYSS) as a business to support and popularize cardano.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "NTSYサポートサービス",
+        "uri": "https://sites.google.com/ntsyss.com/ntsyss"
+      }
+    ]
+  }
+}
